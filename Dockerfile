@@ -16,7 +16,7 @@ RUN apt-get install -y nano samba \
     && apt-get  autoremove \
     && rm -rf /var/lib/apt/lists/*
 
-RUN addgroup meugrupo 
+RUN addgroup grupo 
 
 COPY smb.conf /etc/samba/smb.conf
 COPY smbadd /sbin/smbadd
