@@ -1,0 +1,9 @@
+#!/bin/bash
+
+user="$1"
+
+echo
+smbpasswd -x $user
+echo
+
+userdel $user

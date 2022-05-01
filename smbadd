@@ -1,0 +1,16 @@
+#!/bin/bash
+
+user="$1"
+group="$2"
+
+useradd $user
+usermod -G $group $user
+
+echo
+echo "Informações do usuário criado no Linux: "
+echo
+cat /etc/passwd | grep $user
+id $user
+echo
+smbpasswd -a $user
+echo

@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  samba:
+    networks: 
+      - default
+    volumes:
+      - samba_dados:/dados
+      - samba_config:/etc/samba
+    ports:
+      - "139:139"
+      - "445:445"
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+volumes:
+   samba_dados:
+      external: true
+   samba_config:
+      external: true
