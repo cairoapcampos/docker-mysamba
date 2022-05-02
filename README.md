@@ -18,11 +18,12 @@ force group = grupo
 
 ## Criação do container
 
-1.crie os volumes utilizados:
+1.crie os volumes e a rede:
 
 ```
 docker volume create samba_dados
 docker volume create samba_config
+docker network create network-sambafiles
 ```
 
 2.Crie a imagem e o container:
@@ -31,6 +32,7 @@ docker volume create samba_config
 docker-compose build
 docker-compose up -d
 ```
+**Obs:** Rodar o script `./create.sh` faz o mesmo das etapas 1 e 2.
 
 ## Criação de usuários no container
 
