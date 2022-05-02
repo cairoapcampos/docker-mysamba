@@ -18,7 +18,7 @@ force group = grupo
 
 ## Criação do container
 
-1.crie os volumes e a rede:
+1.Criar os volumes e a rede:
 
 ```
 docker volume create samba_dados
@@ -26,7 +26,7 @@ docker volume create samba_config
 docker network create network-sambafiles
 ```
 
-2.Crie a imagem e o container:
+2.Criação a imagem e o container:
 
 ```
 docker-compose build
@@ -36,7 +36,7 @@ docker-compose up -d
 
 ## Criação de usuários no container
 
-1.Acesse o container:
+1.Acessar o container:
 
 `docker exec -it meucontainer /bin/bash`
 
