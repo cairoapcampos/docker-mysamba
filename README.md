@@ -2,9 +2,10 @@
 
 ## Definição de grupo
 
-1.Edite o Dockerfile trocando "grupo" da linha abaixo para o nome do grupo desejado:
+1.Edite o Dockerfile trocando "grupo" das linhas abaixo para o nome do grupo desejado:
 
 `RUN addgroup grupo`
+`RUN chgrp grupo /dados && chmod 770 /dados`
 
 2. Edite o arquivo `smb.conf` trocando novamente "grupo" das linhas abaixo para o nome do grupo desejado:
 
