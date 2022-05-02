@@ -41,4 +41,4 @@ docker-compose up -d
 
 ## Acesso via Linux:
 
-`smb://ip/arquivos`
+Digitar: `smb://ip/arquivos`
