@@ -38,3 +38,7 @@ docker-compose up -d
 2.Adicionar usuário no grupo criado:  `smbadd usuario grupo`
 
 3.Remover usuário:  `smbrm usuario`
+
+## Acesso via Linux:
+
+`smb://ip/arquivos`
