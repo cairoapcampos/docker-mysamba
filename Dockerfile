@@ -26,7 +26,7 @@ EXPOSE 139/tcp 445/tcp
 
 RUN mkdir /dados
 
-RUN chgrp nti /dados && chmod 770 /dados 
+RUN chgrp grupo /dados && chmod 770 /dados 
 
 VOLUME ["/dados", "/etc/samba"]
 

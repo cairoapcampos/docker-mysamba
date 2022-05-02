@@ -1,21 +1,36 @@
-version: '3'
+#############################################
+# Sambafiles - Compartilhamento de arquivos #
+# Configuração: v1.0                        #
+# Data: 01/05/22                            #
+# Autor: Cairo Ap. Campos                   #
+#############################################	
 
+version: '2.4'
 services:
   samba:
-    networks: 
-      - default
-    volumes:
-      - samba_dados:/dados
-      - samba_config:/etc/samba
     ports:
       - "139:139"
       - "445:445"
-    build:
-      context: .
-      dockerfile: Dockerfile
+    container_name: cont-sambafiles-01
+    hostname: cont-sambafiles-01
+    restart: always
+    volumes:
+      - samba_dados:/dados
+      - samba_config:/etc/samba
+    networks: 
+      - default
+    cpu_shares: 2000
+    cpus: 1
+    build: .
+    image: sambafiles:1.0
 
 volumes:
    samba_dados:
       external: true
    samba_config:
       external: true
+
+networks:
+ default:
+  external:
+   name: network-sambafiles
