@@ -34,3 +34,4 @@ workdir /dados
 
 CMD ["smbd", "--foreground", "--log-stdout", "--no-process-group"]
 
+#teste comentário
