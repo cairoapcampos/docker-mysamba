@@ -11,8 +11,8 @@ services:
     ports:
       - "139:139"
       - "445:445"
-    container_name: cont-sambafiles-01
-    hostname: cont-sambafiles-01
+    container_name: mysamba
+    hostname: mysamba
     restart: always
     volumes:
       - samba_dados:/dados
