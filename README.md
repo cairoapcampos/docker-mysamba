@@ -21,8 +21,8 @@ force group = grupo
 1.Criar os volumes e a rede:
 
 ```
-docker volume create samba_dados
-docker volume create samba_config
+docker volume create mysamba_dados
+docker volume create mysamba_config
 docker network create network-mysamba
 ```
 
