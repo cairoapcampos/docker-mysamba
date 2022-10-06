@@ -38,7 +38,7 @@ docker-compose up -d
 
 1.Acessar o container:
 
-`docker exec -it cont-sambafiles-01 /bin/bash`
+`docker exec -it mysamba /bin/bash`
 
 2.Adicionar usuário no grupo criado:  `smbadd usuario grupo`
 
