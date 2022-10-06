@@ -22,7 +22,7 @@ services:
     cpu_shares: 2000
     cpus: 1
     build: .
-    image: sambafiles:1.0
+    image: mysamba:1.0
 
 volumes:
    samba_dados:
