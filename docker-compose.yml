@@ -15,8 +15,8 @@ services:
     hostname: mysamba
     restart: always
     volumes:
-      - samba_dados:/dados
-      - samba_config:/etc/samba
+      - mysamba_dados:/dados
+      - mysamba_config:/etc/samba
     networks: 
       - default
     cpu_shares: 2000
