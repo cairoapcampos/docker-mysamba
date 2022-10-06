@@ -1,4 +1,4 @@
-# docker-sambafiles
+# docker-mysamba
 
 ## Definição de grupo
 
