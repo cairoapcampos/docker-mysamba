@@ -26,7 +26,7 @@ docker volume create mysamba_config
 docker network create network-mysamba
 ```
 
-2.Criação a imagem e o container:
+2.Criação da imagem e do container:
 
 ```
 docker-compose build
