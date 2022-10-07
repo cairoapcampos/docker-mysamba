@@ -32,7 +32,7 @@ docker network create network-mysamba
 docker-compose build
 docker-compose up -d
 ```
-**Obs:** Rodar o script `./create.sh` faz o mesmo das etapas 1 e 2.
+**Obs:** Rodar o script `./create.sh` faz o mesmo que as etapas 1 e 2.
 
 ## Criação de usuários no container
 
